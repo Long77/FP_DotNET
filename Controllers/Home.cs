@@ -8,13 +8,12 @@ using System;
 [Route("/")]
 public class HomeController : Controller
 {
-    private IRepository<Card> cards;
-    private IRepository<CardList> lists;
-    private IRepository<Board> boards;
-    public HomeController(IRepository<Card> cards, IRepository<CardList> lists, IRepository<Board> boards){
-        this.cards = cards;
+    private IRepository<Project> projects;
+    private IRepository<ProjectList> lists;
+    
+    public HomeController(IRepository<Project> projects, IRepository<ProjectList> lists){
+        this.projects = projects;
         this.lists = lists;
-        this.boards = boards;
     }
 
     [HttpGet("/{username?}")]

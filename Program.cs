@@ -183,7 +183,7 @@ public partial class Handler {
                 // services.AddSignalR();
                 break;
         }
-
+      
         RegisterRepos(services);
 
         switch(_swagger){
