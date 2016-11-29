@@ -26,12 +26,10 @@ public class HomeController : Controller
         return View("Index"); // View(new Student) method takes an optional object as a "model", typically called a ViewModel
     }
 
-    // [HttpGet("sql/cards")] // ?sql=....
+    // [HttpGet("sql/projects")] // ?sql=....
     // public IActionResult SqlCards([FromQuery]string sql) => Ok(cards.FromSql(sql));
 
     // [HttpGet("sql/lists")] // ?sql=....
     // public IActionResult SqlLists([FromQuery]string sql) => Ok(lists.FromSql(sql));
 
-    // [HttpGet("sql/boards")] // ?sql=....
-    // public IActionResult SqlBoards([FromQuery]string sql) => Ok(boards.FromSql(sql));
 }

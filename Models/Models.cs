@@ -19,7 +19,7 @@ public class Project : HasId
     [Required]
     public string Title { get; set; }
     public string Text { get; set; }
-    public int ProjectListId { get;set; }
+    public int ProjectListId { get; set; }
 }
 
 public class ProjectList : HasId
